@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  msg: any = new SpeechSynthesisUtterance();
   s:any = {
     nope: new Audio('assets/audio/nope.mp3'),
     click: new Audio('assets/audio/click.wav'),
@@ -19,14 +20,31 @@ export class HomePage {
     this.s[snd].play();
   }
 
-  async speak() {
-    let msg = new SpeechSynthesisUtterance();
-    msg.text = "Gax. The Wifed Up poota. This poota has been seen stripping in Guadalajara. Her greatest attack is Buy Me A House Simp Husband";
-    window.speechSynthesis.speak(msg);
-    // this.tts.speak('Hello World')
-    //   .then(() => console.log('Success'))
-    //   .catch((reason: any) => console.log(reason));
+  speak(txt: string) {
+    this.msg.text = txt;
+    window.speechSynthesis.speak(this.msg);
   };
+
+  name () {
+    this.speak("Gax.");
+  }
+
+  desc() {
+    this.name();
+    this.speak("The Wife'd Up poota. This poota has been seen stripping in Guadalajara. Her greatest attack is Buy Me A House Simp Husband");
+  }
+
+  price() {
+    this.speak("Her last recorded price is $150")
+  }
+
+  loc() {
+    this.speak("Last seen in the Tulum region of Mexico")
+  }
+
+  atk() {
+    this.speak('Her attacks include: Mean look, Keagal, BBBJ, & Buy me a House simp Husband')
+  }
   
   // async stop (){
   //   await TextToSpeech.stop();

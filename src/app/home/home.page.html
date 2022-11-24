@@ -29,29 +29,36 @@
     </ion-row>
     <ion-row class="putadex-panel-buttons ion-padding-horizontal">
       <ion-col size="3">
-        <ion-button size="large" expand="full"
-        (click)="speak()">A</ion-button>
+        <ion-button size="large" expand="full" (click)="desc()">
+          <ion-icon name="woman-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button (click)="price()" size="large" expand="full">
+          <ion-icon name="cash-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button (click)="loc()" size="large" expand="full">
+          <ion-icon name="globe-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button (click)="atk()" size="large" expand="full">
+          <ion-icon name="paw-outline"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col size="3">
+        <ion-button (click)="bzt('nope')" size="large" expand="full">A</ion-button>
       </ion-col>
       <ion-col size="3">
         <ion-button (click)="bzt('nope')" size="large" expand="full">B</ion-button>
-      </ion-col>
-      <ion-col size="3">
-        <ion-button (click)="bzt('nope')" size="large" expand="full">C</ion-button>
-      </ion-col>
-      <ion-col size="3">
-        <ion-button (click)="bzt('nope')" size="large" expand="full">D</ion-button>
       </ion-col>
       <ion-col size="3">
         <ion-button (click)="bzt('nope')" size="large" expand="full">1</ion-button>
       </ion-col>
       <ion-col size="3">
         <ion-button (click)="bzt('nope')" size="large" expand="full">2</ion-button>
-      </ion-col>
-      <ion-col size="3">
-        <ion-button (click)="bzt('nope')" size="large" expand="full">3</ion-button>
-      </ion-col>
-      <ion-col size="3">
-        <ion-button (click)="bzt('nope')" size="large" expand="full">4</ion-button>
       </ion-col>
     </ion-row>
     <ion-row class="ion-padding-horizontal">
