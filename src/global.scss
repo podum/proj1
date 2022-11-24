@@ -26,6 +26,7 @@
 
 body {
     background-color: black;
+    margin: auto;
 }
 
 hr {
@@ -35,6 +36,9 @@ hr {
 .putadex-frame {
     max-width: 450px !important;
     height: 100vh;
+    width: 57vh;
+    align-self: center;
+    justify-self: center;
 }
 
 .putadex-gen-indicator {
