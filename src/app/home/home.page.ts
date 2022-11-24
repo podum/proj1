@@ -39,7 +39,7 @@ export class HomePage {
   }
 
   loc() {
-    this.speak("Last seen in the Tulum region of Mexico")
+    this.speak("Last spotted in the Tulum region of Mexico")
   }
 
   atk() {

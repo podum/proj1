@@ -58,9 +58,10 @@ hr {
 }
 
 .putadex-descriptor {
-    height: 75px;
+    max-height: 75px;
+    aspect-ratio: 18/4;
     text-align: center;
-    padding-top: 25px;
+    padding: 7%;
     font-family: 'Orbitron', serif;
     margin-top: 5px;
     margin-bottom: 5px;
