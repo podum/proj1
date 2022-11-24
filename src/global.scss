@@ -58,13 +58,15 @@ hr {
 }
 
 .putadex-descriptor {
+    // width: 100%;
     max-height: 75px;
-    aspect-ratio: 18/4;
+    aspect-ratio: 5/1;
     text-align: center;
-    padding: 7%;
+    padding: 6%;
     font-family: 'Orbitron', serif;
     margin-top: 5px;
     margin-bottom: 5px;
+
 }
 
 .putadex-panel-buttons {
@@ -75,4 +77,9 @@ hr {
     }
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.mvt10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
