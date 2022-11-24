@@ -20,18 +20,21 @@ export class HomePage {
     this.s[snd].play();
   }
 
-  speak(txt: string) {
+  speak(txt: string, noclk?: boolean) {
+    if(noclk != true) {
+      this.bzt('click');
+    }
     this.msg.text = txt;
     window.speechSynthesis.speak(this.msg);
   };
 
-  name () {
-    this.speak("Gax.");
+  name (noclk?:boolean) {
+    this.speak("Gax.", noclk);
   }
 
   desc() {
-    this.name();
-    this.speak("The Wife'd Up poota. This poota has been seen stripping in Guadalajara. Her greatest attack is Buy Me A House Simp Husband");
+    // this.name(true);
+    this.speak("Gax. The Wife'd Up poota. This poota has been seen stripping in Guadalajara. Her greatest attack is Buy Me A House Simp Husband");
   }
 
   price() {
