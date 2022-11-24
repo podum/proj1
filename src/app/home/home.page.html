@@ -1,7 +1,7 @@
 <ion-card class="putadex-frame" color="danger">
     <ion-card color="danger" class="ion-no-margin-bottom">
       <ion-buttons class="ion-margin">
-        <ion-fab-button class="ion-margin-end"></ion-fab-button>
+        <ion-fab-button (click)="bzt('activate')" class="ion-margin-end"></ion-fab-button>
         <ion-fab-button class="ion-margin putadex-gen-indicator" color="danger"></ion-fab-button>
         <ion-fab-button class="ion-margin putadex-gen-indicator" color="warning"></ion-fab-button>
         <ion-fab-button class="ion-margin putadex-gen-indicator" color="success"></ion-fab-button>
@@ -29,32 +29,33 @@
     </ion-row>
     <ion-row class="putadex-panel-buttons ion-padding-horizontal">
       <ion-col size="3">
-        <ion-button size="large" expand="full">A</ion-button>
+        <ion-button size="large" expand="full"
+        (click)="speak()">A</ion-button>
       </ion-col>
       <ion-col size="3">
-        <ion-button size="large" expand="full">B</ion-button>
+        <ion-button (click)="bzt('nope')" size="large" expand="full">B</ion-button>
       </ion-col>
       <ion-col size="3">
-        <ion-button size="large" expand="full">C</ion-button>
+        <ion-button (click)="bzt('nope')" size="large" expand="full">C</ion-button>
       </ion-col>
       <ion-col size="3">
-        <ion-button size="large" expand="full">D</ion-button>
+        <ion-button (click)="bzt('nope')" size="large" expand="full">D</ion-button>
       </ion-col>
       <ion-col size="3">
-        <ion-button size="large" expand="full">1</ion-button>
+        <ion-button (click)="bzt('nope')" size="large" expand="full">1</ion-button>
       </ion-col>
       <ion-col size="3">
-        <ion-button size="large" expand="full">2</ion-button>
+        <ion-button (click)="bzt('nope')" size="large" expand="full">2</ion-button>
       </ion-col>
       <ion-col size="3">
-        <ion-button size="large" expand="full">3</ion-button>
+        <ion-button (click)="bzt('nope')" size="large" expand="full">3</ion-button>
       </ion-col>
       <ion-col size="3">
-        <ion-button size="large" expand="full">4</ion-button>
+        <ion-button (click)="bzt('nope')" size="large" expand="full">4</ion-button>
       </ion-col>
     </ion-row>
     <ion-row class="ion-padding-horizontal">
-      <ion-button size="small" color="light">Previous</ion-button>
-      <ion-button size="small" color="light">Next</ion-button>
+      <ion-button (click)="bzt('click')" size="small" color="light">Previous</ion-button>
+      <ion-button (click)="bzt('click')" size="small" color="light">Next</ion-button>
     </ion-row>
 </ion-card>
