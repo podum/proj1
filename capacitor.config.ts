@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'proj1',
+  appId: 'app.web.putadex',
+  appName: 'putadex',
   webDir: 'www',
   bundledWebRuntime: false
 };
