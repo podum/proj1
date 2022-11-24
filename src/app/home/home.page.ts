@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { TextToSpeechAdvanced } from '@awesome-cordova-plugins/text-to-speech-advanced/ngx';
 
 @Component({
   selector: 'app-home',
@@ -14,16 +13,19 @@ export class HomePage {
     activate: new Audio('assets/audio/activate.wav')
   }
 
-  constructor(private tts: TextToSpeechAdvanced) {}
+  constructor() {}
 
   bzt(snd: string) {
     this.s[snd].play();
   }
 
   async speak() {
-    this.tts.speak('Hello World')
-      .then(() => console.log('Success'))
-      .catch((reason: any) => console.log(reason));
+    let msg = new SpeechSynthesisUtterance();
+    msg.text = "Gax. The Wifed Up poota. This poota has been seen stripping in Guadalajara. Her greatest attack is Buy Me A House Simp Husband";
+    window.speechSynthesis.speak(msg);
+    // this.tts.speak('Hello World')
+    //   .then(() => console.log('Success'))
+    //   .catch((reason: any) => console.log(reason));
   };
   
   // async stop (){
